@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./comps/Header";
+import Footer from "./comps/Footer";
+import Body from "./comps/Body";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hay saya Ilham Novriadi.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Card">
+        <Header name="Belajar React JS" />
+        <Body />
+      </div>
+      <Footer text="ilhamnovriadi@2022" />
     </div>
   );
 }
